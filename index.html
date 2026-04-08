@@ -4,29 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EL Vision AI</title>
-    <!-- ① iOS force-redirect: if ?v= is missing or stale, redirect with it.
-         Once fresh, silently clean the URL with history.replaceState.
-         APP_VERSION is injected by Vite at build time via %VITE_APP_VERSION%. -->
-    <script>
-      (function () {
-        var APP_VERSION = "%VITE_APP_VERSION%";
-        var params = new URLSearchParams(window.location.search);
-        var urlV = params.get("v");
-        if (urlV !== APP_VERSION) {
-          // Force iOS to fetch fresh — redirect with ?v=
-          params.set("v", APP_VERSION);
-          var newUrl = window.location.pathname + "?" + params.toString() + window.location.hash;
-          window.location.replace(newUrl);
-        } else {
-          // Already fresh — silently remove ?v= from the URL bar
-          params.delete("v");
-          var clean = window.location.pathname +
-            (params.toString() ? "?" + params.toString() : "") +
-            window.location.hash;
-          history.replaceState(null, "", clean);
-        }
-      })();
-    </script>
   </head>
   <body>
     <div id="root"></div>
