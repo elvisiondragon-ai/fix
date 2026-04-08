@@ -515,56 +515,6 @@ export default function ElVisionAI() {
         </p>
       </section>
 
-      {/* Founder Authority */}
-      <section style={{ maxWidth: 1080, margin: "0 auto", padding: "0 20px 20px" }}>
-        <div style={{
-          display: "flex",
-          alignItems: "center",
-          gap: 16,
-          background: dark ? "rgba(255,255,255,0.03)" : "rgba(0,0,0,0.03)",
-          border: `1px solid ${t.border}`,
-          borderRadius: 14,
-          padding: "16px 20px",
-        }}>
-          <div style={{
-            width: 44,
-            height: 44,
-            borderRadius: "50%",
-            background: dark ? "rgba(79,123,247,0.2)" : "rgba(43,92,230,0.12)",
-            border: `1px solid ${dark ? "rgba(79,123,247,0.3)" : "rgba(43,92,230,0.2)"}`,
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            fontSize: 20,
-            flexShrink: 0,
-          }}>
-            ◈
-          </div>
-          <div style={{ flex: 1 }}>
-            <p style={{ margin: 0, fontSize: 13, color: t.muted, marginBottom: 2 }}>Founded by</p>
-            <p style={{ margin: 0, fontSize: 15, fontWeight: 700, color: t.text }}>eL Reyzandra</p>
-            <p style={{ margin: 0, fontSize: 12, color: t.muted, marginTop: 1 }}>
-              Founder, EL Vision &mdash; Leading Architecture of AI Agentic
-            </p>
-          </div>
-          <a
-            href="https://www.google.com/search?q=eL+Reyzandra+AI+Agentic"
-            target="_blank"
-            rel="noreferrer"
-            style={{
-              fontSize: 12,
-              color: t.accent,
-              textDecoration: "none",
-              fontWeight: 600,
-              whiteSpace: "nowrap",
-              flexShrink: 0,
-            }}
-          >
-            Read on Google →
-          </a>
-        </div>
-      </section>
-
       {/* Problem Cards */}
       <section style={{ maxWidth: 1080, margin: "0 auto", padding: "0 20px 20px" }}>
         <p
